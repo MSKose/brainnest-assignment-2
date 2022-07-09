@@ -32,14 +32,17 @@ nav, .top--section {
 }
 
 .top--section {
-    height: 40vh;
+    height: 50vh;
     display: flex;
+}
+
+.header_links, .top--section__div > div > :nth-child(2) {
+    font-size: 18px;
 }
 
 .header_links {
     display: flex;
     gap: 30px;
-    font-size: 18px;
     color: var(--light_grey)
 }
 
@@ -63,6 +66,7 @@ nav, .top--section {
 }
 
 .top--section__image {
+    height: 250px;
     width: 750px;
     display: flex;
     justify-content: center;
@@ -75,7 +79,115 @@ nav, .top--section {
     color: var(--white);
     border-radius: 5px;
     border: none;
-    width: 70px;
+    width: 90px;
     height: 25px;
     margin-top: 5px;
+}
+
+main {
+    margin-top: 30px;
+}
+
+.random--content {
+    height: 40vh;
+}
+
+.random--content h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.random--content__box__container {
+    width: 50vw;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.random--content__box__container div {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.random__box {
+    border: 3px solid var(--blue);
+}
+
+.random--content__box__container > div :first-child {
+    margin-bottom: 5px;
+}
+
+.quote--content {
+    background-color: var(--light_grey);
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote--content div {
+    width: 800px;
+}
+.quote--content div p:first-child {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--black);
+
+}
+.quote--content div :nth-child(2){
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.sign--up--section {
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sign--up--container {
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: var(--blue);
+    border-radius: 4px;
+    color: var(--white);
+}
+
+.sign--up--container div :first-child {
+    /* border: 1px solid red; */
+    font-weight: 900;
+}
+
+.sign--up--container div :nth-child(2) {
+    font-weight: 100;
+}
+
+.sign--up--container button {
+    background-color: var(--blue);
+    border: none;
+    border-radius: 7px;
+    width: 90px;
+    height: 30px;
+    border: 1.5px solid var(--white);
+    color: var(--white);
+}
+
+footer {
+    height: 10vh;
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
